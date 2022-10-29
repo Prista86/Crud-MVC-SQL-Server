@@ -1,9 +1,3 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-
-
 function insertFrase() {
     var body = {};
     body.Testo = $('#fraseTesto').val();    
@@ -109,7 +103,6 @@ function updateFraseById(id) {
     $(".modal-footer").append(CancelButton);
     document.getElementById("modal").style.display = "block";
 };
-
 
 function hideModal() {
     document.getElementById("modal-header").innerText = "";
