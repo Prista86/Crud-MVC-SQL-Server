@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Frasi";
+}
+<h1>@ViewData["Title"]</h1>
+
+@model List<FraseModel>;
+
+<table>
+    <tr>
+        <td>Frasi</td>        
+    </tr>
+    @foreach (FraseModel p in Model)
+    {
+        <tr>
+            <td>@p.Testo</td>            
+        </tr>
+    }
+</table>

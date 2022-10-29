@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Inserimento Frase";
+}
+@model FraseModel;
+<h1>@ViewData["Title"]</h1>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">            
+            Frase: <input type="text" id="fraseTesto" />            
+            <button class="btn btn-primary" onclick="insertFrase()">Inserisci la Frase</button>
+        </div>
+    </div>
+</div>

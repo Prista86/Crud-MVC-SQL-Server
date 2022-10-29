@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Update Person";
+}
+@using System.Collections.Generic;
+@model List<FraseModel>;
+<h1>@ViewData["Title"]</h1>
+<div class="container">
+    @{
+        <table>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <td>@Model[i].Testo</td>
+                    
+                    <td><button class="btn-sm btn-danger" onclick="updateFraseById('@Model[i].ID')">Update</button></td>
+                </tr>
+            }
+        </table>
+    }
+</div>

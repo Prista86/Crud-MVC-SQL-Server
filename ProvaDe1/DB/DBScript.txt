@@ -1,0 +1,15 @@
+﻿SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Frasi](
+	[ID] [uniqueidentifier] NULL,
+	[Frase] [nvarchar](max) NULL,	
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+INSERT [dbo].[Frasi] ([ID], [Frase]) VALUES (N'ec4a0fd2-269f-4280-b359-33544e1ab848', N'Testo1')
+GO
+INSERT [dbo].[Frasi] ([ID], [Frase]) VALUES (N'4cf2c67f-25d6-406c-a700-92ea796afa57', N'Testo2')
+GO
+INSERT [dbo].[Frasi] ([ID], [Frase]) VALUES (N'5e558b4c-9cce-4265-af2d-fe951d17825d', N'Testo3')
+GO
