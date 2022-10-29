@@ -1,4 +1,4 @@
-function insertFrase() {
+﻿function insertFrase() {
     var body = {};
     body.Testo = $('#fraseTesto').val();    
     $.ajax({
@@ -53,10 +53,10 @@ function deleteFraseById(id) {
 function updateFraseById(id) {
     nameP = document.createElement("p");
     nameP.style.textAlign = "center";
-    nameP.innerText = 'Nome';
+    nameP.innerText = 'Frase';
     document.getElementById("modal-body").appendChild(nameP);
     nameTextArea = document.createElement("input");
-    nameP.appendChild(nameTextArea);    
+    nameP.appendChild(nameTextArea);      
 
     OKbutton = document.createElement("button");
     OKbutton.innerText = "OK";
@@ -70,7 +70,7 @@ function updateFraseById(id) {
         
         $.ajax({
             method: "POST",
-            url: "/api/Person/UpdatePerson",
+            url: "/api/Frase/UpdateFrase",
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(body),
             dataType: "json",
